@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+.container {
+    padding: 16px;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+<h2>Signup Form</h2>
+
+<form action="user_signup.jsp" style="border:1px solid #ccc">
+  <div class="container">
+    <label><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <label><b>Email</b></label>
+    
+    <input type="text" placeholder="Enter Email" name="email" required>
+<label><b>Mobile NO.</b></label>
+<input type="text" placeholder="Enter Mobile No." name="mobile" required>
+    <label><b>Passing year</b></label>
+    <input type="text" placeholder="Enter passing Year" name="pass" required>
+    <label><b>Qualification</b></label><br><br>
+    <select name="qualify">
+    <option>B.Tech</option>
+    <option>BCA</option>
+    <option>DIPLAMA</option>
+    <option>MCA</option>
+    <option>M.Tech</option>
+    <option>Other</option>
+    
+    </select>
+    <br><br>
+    <label><b>Subject</b></label><br><br>
+    <select name="subject">
+    <option>C</option>
+    <option>C++</option>
+    <option>JAVA</option>
+    <option>PHP</option>
+    <option>HTML</option>
+    <option>Other</option>
+    </select>
+    <br><br>
+    <label><b>Grade</b></label><br><br>
+    <select name="grade">
+    <option></option>
+    <option>50</option>
+    <option>60</option>
+    <option>70</option>
+    <option>80</option>
+    <option>90</option>
+        <option>100</option>
+        </select>
+    <br><br>
+        <label><b>Password</b></label>
+    
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="checkbox" checked="checked"> Remember me
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
