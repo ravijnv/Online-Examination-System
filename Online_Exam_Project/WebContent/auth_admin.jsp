@@ -26,7 +26,11 @@ if(rs.next())
 {
 	an=rs.getString("name");
 	un=rs.getString("user_id");
+	//un = "Bittu";
 	ps=rs.getString("password");
+	//ps = "1234";
+	//Bittu here ..... doing project with team
+	int x =500; 
 	if(un.equals(uname) && ps.equals(pass))
 	{
 %>
