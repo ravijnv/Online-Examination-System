@@ -36,7 +36,11 @@ if(grad!=null)
 String psw=request.getParameter("psw");
 
 Class.forName("com.mysql.jdbc.Driver");
+System.out.println("Bittu here");
+
 Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","1234");
+
+
 String query="insert into user_table(name,email,mobile,pass_year,qualify,subject,grade,password) values(?,?,?,?,?,?,?,?)";
 PreparedStatement ps=conn.prepareStatement(query);
 ps.setString(1,uname);
