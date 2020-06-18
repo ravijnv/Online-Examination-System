@@ -11,6 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body><%
+System.out.println("Trial");
 String uname=request.getParameter("uname");
 String pass=request.getParameter("psw");
 session.setAttribute("uname", uname);
