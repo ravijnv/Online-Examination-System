@@ -27,12 +27,13 @@ pass=Integer.parseInt(pas);
 }
 String qualify=request.getParameter("qualify");
 String sub=request.getParameter("subject");
-String grad=request.getParameter("grade");
-int grade=0;
-if(grad!=null)
-{
-	grade=Integer.parseInt(grad);
+
+int per =0;
+String perc=request.getParameter("perc");
+if(perc!=null){
+  per=Integer.parseInt(perc);	
 }
+
 String psw=request.getParameter("psw");
 
 Class.forName("com.mysql.jdbc.Driver");
@@ -49,7 +50,7 @@ ps.setLong(3,mob);
 ps.setInt(4,pass);
 ps.setString(5,qualify);
 ps.setString(6,sub);
-ps.setInt(7,grade);
+ps.setInt(7,per);
 ps.setString(8,psw);
 ps.executeUpdate();
 %>
