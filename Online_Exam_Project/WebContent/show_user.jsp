@@ -51,7 +51,6 @@ while(rs.next())
 	q=rs.getString("qualify");
 	sub=rs.getString("subject");
 	g=rs.getInt("grade");
-	m=rs.getInt("marks");
 %>
 <tr style="border:none;padding:25px;margin:25px;">
 <td style="border:none;padding:25px;margin:25px;"><%=id %></td>

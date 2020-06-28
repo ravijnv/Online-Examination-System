@@ -31,6 +31,8 @@ String name=request.getParameter("name");
 <br><br>
 <a href="show_user.jsp">SHOW USER</a>
 <br><br>
+<a href="recommendation_courses.html">RECOMMENDATION COURSES</a>
+<br><br>
 <a href="feedback_approve.jsp">APPROVE FEEDBACK/REVIEW</a>
 <br><br>
 </body>
